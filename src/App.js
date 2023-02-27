@@ -3,16 +3,16 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { CartProvider } from "react-use-cart";
 
 import './App.css';
-import Home from './components/Home';
-import Navbar from './components/Navbar';
-import Login from './components/users/Login';
-import SignUp from './components/users/SignUp';
-import Checkout from './components/Checkout.jsx';
-import Cart from './components/Cart';
-import Products from './components/Products';
-import MyAccount from './components/MyAccount';
-import Footer from './components/Footer';
-import Admin from './components/Admin';
+import Home from './Component/Home';
+import Navbar from './Component/Navbar';
+import Login from './Component/Login';
+import SignUp from './Component/SignUp';
+import Checkout from './Component/Checkout.js';
+import Cart from './Component/Cart';
+import Products from './Component/Products';
+import MyAccount from './Component/MyAccount';
+import Footer from './Component/Footer';
+import Admin from './Component/Admin';
 
 function App() {
   const [allProducts, setAllProducts] = useState([]);
