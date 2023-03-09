@@ -1,10 +1,11 @@
 import Header from './components/Header';
 import Main from './components/Main';
 import Basket from './components/Basket';
-import ProductList from './components/ProductList';
+import data from './components/data';
 import { useState } from 'react';
 function App() {
-  const { products } = ProductList;
+  const { products } = data();
+  console.log(products);
   const [cartItems, setCartItems] = useState([]);
   const onAdd = (product) => {
     const exist = cartItems.find((x) => x.id === product.id);
